@@ -1,0 +1,18 @@
+{
+  "name": "ejs-axios-app",
+  "version": "1.0.0",
+  "description": "A simple application to fetch and display random users using EJS and Axios.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Random Users</title>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <h1>Random Users</h1>
+    <div class="user-list">
+        <% users.forEach(user => { %>
+            <div class="user-card">
+                <img src="<%= user.picture.large %>" alt="<%= user.name.first %> <%= user.name.last %>">
+                <h2><%= user.name.first %> <%= user.name.last %></h2>
+                <p>Email: <%= user.email %></p>
+                <p>Location: <%= user.location.city %>, <%= user.location.country %></p>
+            </div>
+        <% }) %>
+    </div>
+</body>
+</html>
